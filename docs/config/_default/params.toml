@@ -1,0 +1,87 @@
+# Meta Data for SEO
+
+## Homepage
+title = "ScalaWay"
+titleSeparator = "-"
+titleAddition = "Open Tech Exploration"
+description = ""
+
+## Documentation
+# docsVersion = "0.1"
+
+## Open Graph
+images = []
+ogLocale = "en_US"
+domainTLD = ""
+titleHome = ""
+
+## Twitter Cards
+twitterSite = ""
+twitterCreator = ""
+
+## JSON-LD
+# schemaType = "Person"
+schemaType = "Organization"
+schemaName = "ScalaWay"
+schemaAuthor = ""
+schemaAuthorTwitter = ""
+schemaAuthorLinkedIn = ""
+schemaAuthorGitHub = ""
+schemaLocale = "en-US"
+schemaLogo = "logo-doks.png"
+schemaLogoWidth = 512
+schemaLogoHeight = 512
+schemaImage = "doks.png"
+schemaImageWidth = 1280
+schemaImageHeight = 640
+schemaTwitter = ""
+schemaLinkedIn = ""
+schemaGitHub = "https://github.com/ScalaWay/scalaway.github.io"
+schemaSection = "blog"
+
+## Sitelinks Search Box
+siteLinksSearchBox = false
+
+## Chrome Browser
+themeColor = "#fff"
+
+# Images
+quality = 85
+bgColor = "#fff"
+landscapePhotoWidths = [900, 800, 700, 600, 500]
+portraitPhotoWidths = [800, 700, 600, 500]
+lqipWidth = "20x"
+smallLimit = "300"
+
+# Footer
+footer = "Copyright (c) 2021 ScalaWay"
+
+# Feed
+copyRight = "Copyright (c) 2021 ScalaWay"
+
+# Alert
+alert = false
+alertDismissable = true
+alertText = ""
+
+# Edit Page
+# repoHost [Github | Gitea | GitLab] is used for building the edit link based on git hoster
+repoHost = "GitHub"
+#repoHost = "Gitea"
+docsRepo = "https://github.com/ScalaWay/scalaway.github.io"
+docsRepoBranch = "main"
+editPage = false
+
+[options]
+  lazySizes = true
+  clipBoard = true
+  instantPage = true
+  flexSearch = true
+  darkMode = true
+  bootStrapJs = true
+  breadCrumb = false
+  highLight = true
+  kaTex = false
+  collapsibleSidebar = true
+  multilingualMode = false
+  docsVersioning = false

@@ -1,0 +1,45 @@
+name: GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ${{ matrix.os }}
+
+    defaults:
+      run:
+        working-directory: ./docs
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        node: [16.x]
+
+    steps:
+      - name: Check out project
+        uses: actions/checkout@v2
+    
+      - name: Set up Node.js ${{ matrix.node }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node }}
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Check for linting errors
+        run: npm test
+
+      - name: Build production website
+        run: npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          destination_dir: docs
+          publish_dir: ./docs/public
+          cname: scalaway.io
